@@ -14,7 +14,7 @@ body {
 }
 
 .contenedor {
-    display: flex;
+    display: flex; /* Sirve para crear un contenedor flexible que permite alinear de forma eficiente los elementos hijos */
 }
 
 /* NAV */
@@ -32,7 +32,7 @@ body {
 }
 
 .nav ul {
-    list-style: none;
+    list-style: none; 
 }   
 
 .nav li {
@@ -67,15 +67,15 @@ body {
 }
 
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: flex; /* Crea un contenedor flexible */
+    flex-wrap: wrap; /* Sirve para cuándo no caben más elementos en la primera línea los ponga en la línea de abajo */
+    gap: 15px; /* Se usa para crear espacios (Separación) entre los elementos hijos */
     margin-top: 20px;
-    flex-direction: column; /* dirección de elementos en columnas, vertical */
+    flex-direction: column; /* Hace que los elementos se apilen verticalmente, uno debajo del otro en forma de columna */
 }
 
 .row{
-    display: flex;
+    display: flex; /* Crea un contenedor flexible */
     flex-wrap: wrap;
     gap: 15px;
     align-items: flex-start;
@@ -86,26 +86,26 @@ body {
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Con esto hacemos que la tarjeta se agrande de forma gradual y agradable */
 }
 
 .tarjeta:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Hará que las imagenes se agranden cuando pasemos el cursor por encima */ 
 }
 
 /* Proporciones */
 .grande {
-    flex: 3;
+    flex: 3; /* Lo mismo que los demás flex solo que este ocupa el triple de espacio */
     background-color: #ffd54f;
 }
 
 .mediana {
-    flex: 2;
+    flex: 2; /* Ocupa el doble de espacio que flex:1 siempre que haya más espacio disponible */
     background-color: #4fc3f7;
 }
 
 .pequeña {
-    flex: 1;
+    flex: 1; /* hace que un elemento sea flexible y ocupe un espacio proporcional dentro de un contenedor flex */
     background-color: #d63ba8;
 }
 
@@ -133,7 +133,7 @@ body {
     font-weight: bold;
     width: 350px;
     height: 250px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;     /* Centrarlo horizontalmente */
     justify-content: center; /* Centrarlo verticalmente */
@@ -195,7 +195,7 @@ body {
     width: 250px;
     height: 190px;
     background-color: #1cc9e7;
-    flex: none;
+    flex: none; /* Con "flex: none" mantiene su tamaño fijo */
 }
 
 .pequeña-horizontal img {
