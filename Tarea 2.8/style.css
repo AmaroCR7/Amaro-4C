@@ -95,12 +95,12 @@ body {
 
 /* Proporciones */
 .grande {
-    flex: 3; /* Lo mismo que los demás flex solo que este ocupa el triple de espacio */
+    flex: 3; 
     background-color: #ffd54f;
 }
 
 .mediana {
-    flex: 2; /* Ocupa el doble de espacio que flex:1 siempre que haya más espacio disponible */
+    flex: 2;
     background-color: #4fc3f7;
 }
 
